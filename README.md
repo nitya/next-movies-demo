@@ -10,7 +10,7 @@ To make the app work with Azure Static Web Apps, I made the following changes:
  - Created TMDB account and grabbed the API KEY and READ ACCESS TOKEN information from [this page](https://www.themoviedb.org/settings/api)
  - Copied `.env.local.example` to `.env.local` and added the API KEY and READ ACCESS TOKEN information to it.
  - Added 'env' section manually to the SWA workflow YAML. Added the API KEY and READ ACCESS TOKEN information to the GitHub Secrets section of repo, then referenced them in the workflow YAML in the env section.
- - Also added `env` value to configure SWA for static export.
+ - Also added `env` value to configure SWA for static export. And changed package.json to use the static-build command as default build.
 
 ## Demo
 
