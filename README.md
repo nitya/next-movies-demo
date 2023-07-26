@@ -3,6 +3,13 @@
 
 This is a Movies App built using Next.js, React and [The Movie Database (TMDB)](https://www.themoviedb.org/) API. 
 
+## Changes - NN
+To make the app work with Azure Static Web Apps, I made the following changes:
+
+ - Added `.npmrc` with `legacy-peer-deps=true` set to overcome issues with version conflicts in CI/CD workflow (GitHub Actions)
+ - Created TMDB account and grabbed the API KEY and READ ACCESS TOKEN information from [this page](https://www.themoviedb.org/settings/api)
+ - Copied `.env.local.example` to `.env.local` and added the API KEY and READ ACCESS TOKEN information to it.
+
 ## Demo
 
 A [live deployment](https://movies.zaps.dev) of this app is available to try it out.
